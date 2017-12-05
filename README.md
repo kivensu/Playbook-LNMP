@@ -1,7 +1,10 @@
-# Playbook-LNMP
+# Playbook-LNMP for CentOS 7.2
 ## HOW TO USE
 ### Install ansible
 ```
+cat /etc/redhat-release
+CentOS Linux release 7.2.1511 (Core)
+
 yum -y install ansible
 vim /etc/ansible/hosts
 ...
