@@ -1,0 +1,15 @@
+---
+- name: copy openssl to web clusters
+  copy: src=../files/openssl-1.0.2l.tar.gz dest=/usr/local/src
+- name: copy pcre to web clusters
+  copy: src=../files/pcre-8.41.tar.gz dest=/usr/local/src
+- name: copy nginx to web clusters 
+  copy: src=../files/nginx-1.12.2.tar.gz dest=/usr/local/src
+- name: copy install_shell to client
+  copy: src=../files/install_nginx.sh dest=/usr/local/src
+- name: copy init.d/nginx to client
+  copy: src=../files/Nginx-init-CentOS dest=/usr/local/src
+- name: copy nginx.conf to client
+  copy: src=../files/nginx.conf dest=/usr/local/src
+- name: install nginx
+  shell: /bin/bash /usr/local/src/install_nginx.sh

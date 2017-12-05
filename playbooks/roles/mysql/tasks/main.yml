@@ -1,0 +1,7 @@
+---
+- name: copy mysql to web clusters
+  copy: src=../files/mysql-5.6.23.tar.gz dest=/usr/local/src
+- name: copy install_shell to client
+  copy: src=../files/install_mysql.sh dest=/usr/local/src
+- name: install mysql
+  shell: /bin/bash /usr/local/src/install_mysql.sh
