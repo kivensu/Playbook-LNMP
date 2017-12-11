@@ -17,11 +17,11 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub root@X.X.X.X
 ```
 ansible-playbook web.yml
 ```
-### install php7.0.2
+### Install php7.0.2
 ```
 ansible-playbook php.yml
 ```
-### install mysql5.6.23
+### Install mysql5.6.23
 ```
 ansible-playbook db.yml
 ```
